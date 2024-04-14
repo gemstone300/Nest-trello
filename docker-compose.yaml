@@ -1,0 +1,20 @@
+# version: '3.9'
+
+# services:
+#   backend:
+#     build:
+#       context: ./
+#       dockerfile: Dockerfile
+#     container_name: trellow-dc
+#     # image: ECR uri지정 (ECR로 build파일 가져올 경우) -cloud
+#     restart: always #문제 발생시 항상 재시작
+#     networks:
+#       - backend #지정한 network로 container간 통신
+#     ports:
+#       - '8080:8080'
+#     volumes:
+#       - './src:/var/app' #WORKDIR. file변경 추적
+
+# networks: # container간 통신방식
+#   backend:
+#     driver: bridge
